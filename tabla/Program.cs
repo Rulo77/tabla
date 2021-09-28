@@ -11,9 +11,9 @@ namespace tabla
         static void Main(string[] args)
         {
             float n1,n2,n3,n4,n5, b, R;
+            
 
-
-            Console.WriteLine("tabla del 1:");
+            /*Console.WriteLine("tabla del 1:");
             n1 = 1;
 
             for (b = 1; b <= 10; ++b)
@@ -62,10 +62,23 @@ namespace tabla
                 R = n5 * b;
                 Console.WriteLine("{0} por {1} = {2}", n5, b, R);
 
+            }*/
+
+            Console.WriteLine("---------------------------------------------------------------------------------------");
+
+            for(int i=1; i<=10; i++)
+            {
+                Console.WriteLine("tabla del " + i);
+                for(int j=1; j<=10; j++)
+                {
+                    R = i * j;
+                    Console.WriteLine("{0} por {1} = {2}", i, j, R);
+                }
+
+                Console.WriteLine("---------------------------------------------------------------------------------------");
             }
 
-
-            Console.Read();
+            Console.ReadKey();
         }
 
     }
